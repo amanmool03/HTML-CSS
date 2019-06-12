@@ -1,1 +1,1 @@
-# HTML-CSS
+Image Mapping (HTML/CSS)
