@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<p>click to find Sum of odd numbers from 0 to 99</p>
+<button onclick="odd()">click here!!!</button>
+  <p id="demo"></p>
+
+<script type="text/javascript">
+	function odd()
+	{
+	var sum=0;
+    var c;
+    var i;
+	for(i=1;i<=100;i++)
+	{
+   	c=2*i-1;
+   	sum=sum+c;
+	}
+
+	document.getElementById('demo').innerHTML=sum;
+    }
+
+
+</script>
+</body>
+</html>

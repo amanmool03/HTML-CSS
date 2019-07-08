@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Open a new window, and resize the width and height to 500px:</p>
+
+
+<form>
+	<input type="number" name="width" id="width">
+	<input type="number" name="height" id="height">
+</form>
+
+<button onclick="openWin()">Create window</button>
+<button onclick="resizeWin()">Resize window</button>
+
+<p id="demo"></p>
+
+<script>
+var myWindow;
+
+function openWin() {
+	var a= getElementById('width').value;
+  	//var b=getElementById('height').value;
+          
+  	document.getElementById("demo").innerHTML=a;
+  	// myWindow = window.open("", "", "width=10, height=10");
+}
+
+/*function resizeWin() {
+  myWindow.resizeTo(250, 250);
+  myWindow.focus();
+}*/
+</script>
+
+</body>
+</html>
+
+
+
+</body>
+</html>
