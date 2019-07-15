@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function formval()
+		{
+
+			if(document.myform.name.value=="")
+			{
+				alert("Pls fill the form ");
+				document.myform.name.focus();
+				 return false;
+			}     
+
+			if(document.myform.Address.value=="")
+			{
+				alert("Pls fill the form ");
+				document.myform.Address.focus();
+				return false;
+			} 
+			if(isNAN(document.myform.male.value))
+			{
+				alert("Pls fill the form ");
+				document.myform.male.focus();
+				return false;
+			}
+			if(document.myform.number.value==""||document.myform.number.value.length()<10)
+			{
+				alert("Pls fill the form ");
+				document.myform.Address.focus();
+				return false;
+			} 
+
+			if(document.myform.email.value=="")
+			{
+				alert("Pls fill the form ");
+				document.myform.email.focus();
+				return false;
+			} 
+			if(document.myform.country.value=="")
+			{
+				alert("Pls fill the form ");
+				document.myform.country.focus();
+				return false;
+			} 
+
+			if(document.myform.comment.value=="")
+			{
+				alert("Pls fill the form ");
+				document.myform.comment.focus();
+				return false;
+			} 
+
+			return true;
+		}
+	</script>
+</head>
+<body>
+
+	<h1>Form </h1>
+	<form action="#"  onsubmit="return formval()" name="myform">
+		<table cellpadding="2" cellspacing="2" border="0">
+
+			<tr>
+				<td>Username</td>
+				<td><input type="text" name="name"></td>
+			</tr>
+			<tr>
+				<td>Address</td>
+				<td><input type="text" name="Address"></td>
+			</tr>
+			<tr>
+				<td>Telephone</td>
+				<td><input type="number" name="number"></td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td>
+					<input type="radio" name="gender" value="male" checked="checked">Male
+					<input type="radio" name="gender" value="female">Female
+					<input type="radio" name="gender" value="other">other</td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td><input type="email" name="email"></td>
+				</tr>
+				<tr>
+					<td>country</td>
+					<td><input type="text" name="country"></td>
+				</tr>
+				<tr>
+					<td>Comment</td>
+					<td><textarea name="comment"></textarea></td>
+				</tr>
+
+				<tr>
+					<td><input type="submit" name="submit"></td>
+				</tr>
+
+			</table>
+		</form>
+	</body>
+	</html>
